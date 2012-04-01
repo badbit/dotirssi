@@ -30,6 +30,14 @@ servers = (
     use_ssl = "no";
     ssl_verify = "no";
     autoconnect = "yes";
+  },
+  {
+    address = "irc.blinkenshell.org";
+    chatnet = "BlinkenIRC";
+    port = "6697";
+    use_ssl = "yes";
+    ssl_verify = "no";
+    autoconnect = "yes";
   }
 );
 
@@ -97,6 +105,7 @@ chatnets = {
   };
   SILC = { type = "SILC"; };
   freenode = { type = "IRC"; };
+  BlinkenIRC = { type = "IRC"; };
 };
 
 channels = (
@@ -105,7 +114,8 @@ channels = (
   { name = "#gultij"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#noisebridge"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#crunchbang"; chatnet = "freenode"; autojoin = "yes"; },
-  { name = "#latex"; chatnet = "freenode"; autojoin = "yes"; }
+  { name = "#latex"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "#blinkenshell"; chatnet = "BlinkenIRC"; autojoin = "yes"; }
 );
 
 aliases = {
