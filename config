@@ -1,5 +1,9 @@
 servers = (
-  { address = "irc.irc-hispano.org"; chatnet = "IRCHispano"; port = "6667"; },
+  {
+    address = "irc.irc-hispano.org";
+    chatnet = "IRCHispano";
+    port = "6667";
+  },
   { address = "eu.irc6.net"; chatnet = "IRCnet"; port = "6667"; },
   { address = "open.ircnet.net"; chatnet = "IRCnet"; port = "6667"; },
   { address = "irc.efnet.org"; chatnet = "EFNet"; port = "6667"; },
@@ -123,6 +127,7 @@ chatnets = {
   SILC = { type = "SILC"; };
   freenode = { type = "IRC"; };
   BlinkenIRC = { type = "IRC"; };
+  IRCHispano = { type = "IRC"; };
 };
 
 channels = (
@@ -134,7 +139,7 @@ channels = (
   { name = "#latex"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#blinkenshell"; chatnet = "BlinkenIRC"; autojoin = "yes"; },
   { name = "#mexico"; chatnet = "IRCHispano"; autojoin = "yes"; },
-  { name = "#filosofia"; chatnet = "BlinkenIRC"; autojoin = "yes"; };
+  { name = "#filosofia"; chatnet = "BlinkenIRC"; autojoin = "yes"; }
 );
 
 aliases = {
