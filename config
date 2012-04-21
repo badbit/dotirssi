@@ -130,7 +130,10 @@ chatnets = {
     type = "IRC";
     autosendcmd = "/^msg nickserv identify <password>;wait 2000";
   };
-  IRCHispano = { type = "IRC"; };
+  IRCHispano = { 
+    type = "IRC";
+    autosendcmd = "/nick badbit:<password>;wait 2000";
+    };
 };
 
 channels = (
