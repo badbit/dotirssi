@@ -105,7 +105,10 @@ chatnets = {
   };
   SILC = { type = "SILC"; };
   freenode = { type = "IRC"; };
-  BlinkenIRC = { type = "IRC"; };
+  BlinkenIRC = {
+    type = "IRC";
+    autosendcmd = "/^msg nickserv identify <password>;wait 2000";
+  };
 };
 
 channels = (
@@ -288,7 +291,7 @@ settings = {
   "fe-text" = { actlist_sort = "refnum"; };
   "fe-common/core" = {
     autolog = "yes";
-    autolog_path = "~/logs/irssi/%Y/$tag/$0.%m-%d.log";
+    autolog_path = "~/Dropbox/logs/irssi/%Y/$tag/$0.%m-%d.log";
   };
 };
 logs = { };
